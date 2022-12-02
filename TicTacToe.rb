@@ -75,10 +75,6 @@ class Game
     end
   end
 
-  #check if position is empty
-  #def free_position
-    #(1..9).select {|position| @board[position].include?("X" || "0")}
-  #end
 
 
   #check to see if game has been won
@@ -133,61 +129,5 @@ class Game
   end
 end
 
-
-    #loop do
-      #display_board(@board)
-      #puts take_turns(@turn) == @player_one ? "Player ONE make your move!" : "Player TWO make your move!"
-      #user_input = gets.chomp
-        #if(position_taken?(@board, input_to_index(user_input)))
-          #move(@board, input_to_index(user_input), playing_piece(@player))
-          #@turn += 1
-        #end
-      #if(over?(@board))
-        #break
-        #winner(@board, @player)
-      #end
-    #end
-  #end
-#end
-      
-
-    #while !over?(@board)
-      #display_board(@board)
-      #puts take_turns(@turn) == @player_one ? "Player ONE make your move!" : "Player TWO make your move!"
-      #user_input = gets.chomp
-      
-      #if(position_taken?(@board, input_to_index(user_input)))
-        #move(@board, input_to_index(user_input), playing_piece(@player))
-        #@turn += 1
-      #end
-      #winner(@board, @player)
-    #end
-  #end
-#end
-
 new_game = Game.new()
 new_game.play_game
-#get HumanPlayer input
-#puts "Player ONE place your move"
-#user_input = gets.chomp
-#input_to_index(user_input)
-#valid_move?(board, input_to_index(user_input))
-#position_taken?(board, input_to_index(user_input))
-#move(board, input_to_index(user_input), first_player = "X")
-#display_board(board)
-
-#establish the board
-#player 1 goes
-#board
-#player 2 goes
-#board
-#continues until game is won OR all positions have been taken
-
-  #determine if move is valid
-  #def valid_move?(board, index)
-    #if(@board[index].between?(0, 9) && !position_taken?(@board, index))
-      #return true
-    #else
-      #return "Not a valid move, try again"
-    #end
-  #end
